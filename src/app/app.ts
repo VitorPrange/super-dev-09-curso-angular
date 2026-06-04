@@ -1,12 +1,12 @@
 import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { RouterOutlet, RouterLink } from '@angular/router';
 import { BoasVindas } from "./boas-vindas/boas-vindas";
 import { CidadeBlumenau } from './cidade-blumenau/cidade-blumenau';
 import { CidadeIndaial } from './cidade-indaial/cidade-indaial';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, BoasVindas, CidadeBlumenau, CidadeIndaial],
+  imports: [RouterOutlet, BoasVindas, CidadeBlumenau, CidadeIndaial, RouterLink],
   templateUrl: './app.html',
   styleUrl: './app.scss'
 })
