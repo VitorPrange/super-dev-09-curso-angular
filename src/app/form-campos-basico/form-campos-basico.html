@@ -11,7 +11,9 @@
     <input type="text" name="sobrenome" id="sobrenome" [(ngModel)]="sobrenome" placeholder="Sobrenome">
 
     <button (click)="apresentarNomeCompleto()">Apresentar nome completo</button>
-    <p>Valor digitado no campo: {{nome()}}</p>
+    @if (resultadoNomeCompleto !== "") {
+        <p>Valor digitado no campo: {{resultadoNomeCompleto}}</p>
+    }
 </div>
 
 <div id="formulario-calculadora">

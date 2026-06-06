@@ -11,6 +11,7 @@ export class FormCamposBasico {
 
   nome = signal<string>("")
   sobrenome = signal<string>("")
+  resultadoNomeCompleto: string = "";
 
   numero01 = signal<number | null>(null)
   numero02 = signal<number | null>(null)
@@ -18,7 +19,7 @@ export class FormCamposBasico {
 
   apresentarNomeCompleto (): void{
     const nomeCompleto: string = `${this.nome()} ${this.sobrenome()}`
-    alert(`Nome completo: ${nomeCompleto}`)
+    this.resultadoNomeCompleto = nomeCompleto;
   }
 
   realizarCalculo(): void {
