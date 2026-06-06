@@ -1,0 +1,39 @@
+<h1>Exempos de interação com o usuario</h1>
+
+<h2>Famoso ola mundo dos campos</h2>
+
+<div id="formulario-nome-completo">
+    <label for="nome">Nome</label>
+    <!-- ngModel e uma forma de relacionar um campo com uma variavel (é nessesario importar FormsModule) -->
+    <input type="text" name="nome" id="nome" [(ngModel)]="nome" placeholder="Nome">
+
+    <label for="sobrenome">Sobrenome</label>
+    <input type="text" name="sobrenome" id="sobrenome" [(ngModel)]="sobrenome" placeholder="Sobrenome">
+
+    <button (click)="apresentarNomeCompleto()">Apresentar nome completo</button>
+    <p>Valor digitado no campo: {{nome()}}</p>
+</div>
+
+<div id="formulario-calculadora">
+    <label for="numero1">Número 1 <span>*</span></label>
+    <input type="number" name="numero1" id="numero1" [(ngModel)]="numero01">
+
+    <label for="numero2">Número 2 <span>*</span></label>
+    <input type="number" name="numero2" id="numero2" [(ngModel)]="numero02">
+
+    <span>Operação <span>*</span></span>
+
+    <input type="radio" name="operacao" id="operacao-somar" [(ngModel)]="operacao" value="somar">
+    <label for="operacao-somar">Somar</label>
+
+    <input type="radio" name="operacao" id="operacao-subtrair" [(ngModel)]="operacao" value="subtrair">
+    <label for="operacao-subtrair">subtrair</label>
+
+    <input type="radio" name="operacao" id="operacao-multiplicar" [(ngModel)]="operacao" value="multiplicar">
+    <label for="operacao-multiplicar">multiplicar</label>
+
+    <input type="radio" name="operacao" id="operacao-dividir" [(ngModel)]="operacao" value="dividir">
+    <label for="operacao-dividir">dividir</label>
+
+    <button (click)="realizarCalculo()">Calcular</button>
+</div>

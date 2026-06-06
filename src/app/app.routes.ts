@@ -4,6 +4,7 @@ import { CidadeIndaial } from './cidade-indaial/cidade-indaial';
 import { FilmeInterestelar } from './filme-interestelar/filme-interestelar';
 import { FilmeCavaleiroDasTrevas } from './filme-cavaleiro-das-trevas/filme-cavaleiro-das-trevas';
 import { FilmeUmSonhoDeLiberdade } from './filme-um-sonho-de-liberdade/filme-um-sonho-de-liberdade';
+import { FormCamposBasico } from './form-campos-basico/form-campos-basico';
 
 export const routes: Routes = [
     {path: "cidade-blumenau", loadComponent: () => CidadeBlumenau},
@@ -11,4 +12,5 @@ export const routes: Routes = [
     {path: "filme-interestelar", loadComponent: () => FilmeInterestelar},
     {path: "filme-cavaleiro-das-trevas", loadComponent: () => FilmeCavaleiroDasTrevas},
     {path: "filme-um-sonho-de-liberdade", loadComponent: () => FilmeUmSonhoDeLiberdade},
+    {path: "form-campos-basicos", loadComponent: () => FormCamposBasico},
 ];
