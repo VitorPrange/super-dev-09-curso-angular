@@ -16,6 +16,17 @@ export class Exercicio02CalculoMedia {
   calcularMedia(): void {
     if(this.nota1() === null || this.nota2() === null || this.nota3() === null){
       alert("Preencha todas as notas")
+      return
+    }
+
+
+    const media:number = ((this.nota1()! + this.nota2()! + this.nota3()!) / 3);
+    debugger
+    if(media < 7){
+      alert("Media: " + media + "\n" + "Reprovado");
+
+    }else{
+      alert("Media: " + media + "\n" + "Aprovado");
     }
   }
 }

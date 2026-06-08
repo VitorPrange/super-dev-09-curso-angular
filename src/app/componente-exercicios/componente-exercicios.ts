@@ -13,10 +13,6 @@ import { Exercicio10OrcamentoViagem } from '../exercicio10-orcamento-viagem/exer
 @Component({
   selector: 'app-componente-exercicios',
   imports: [Exercicio01DadosPessoais, Exercicio02CalculoMedia, Exercicio03ConversorTemperatura, Exercicio04CadastroProduto, Exercicio05Imc,Exercicio06PedidoPizzaria, Exercicio07PlanoAcademia, Exercicio08SimuladorFrete,Exercicio09CadastroUsuario, Exercicio10OrcamentoViagem],
-  template: `
-    <app-exercicio01-dados-pessoais />
-    <app-exercicio02 />
-  `,
   templateUrl: './componente-exercicios.html',
   styleUrl: './componente-exercicios.scss',
 })

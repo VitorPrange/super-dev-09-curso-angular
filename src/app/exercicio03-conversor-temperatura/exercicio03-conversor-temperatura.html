@@ -1,1 +1,13 @@
-<p>exercicio03-conversor-temperatura works!</p>
+
+<div>
+    <label for="temperatura">Temperatura</label>
+    <input type="number" name="temper" id="temperatura" [(ngModel)]="temperatura">
+
+    <input type="radio" name="temperatura" id="temperaturaCelcius" value="celsius" [(ngModel)]="medida">
+    <label for="temperaturaCelcius">°F => °C</label>
+
+    <input type="radio" name="temperatura" id="temperaturaFahrenheit" value="FAH" [(ngModel)]="medida">
+    <label for="temperaturaFahrenheit">°C => °F</label>
+
+    <button (click)="converterTemperatura()">Converter</button>
+</div>
