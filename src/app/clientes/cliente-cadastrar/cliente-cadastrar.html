@@ -1,0 +1,13 @@
+<label for="nome-cliente">Nome</label>
+<input type="text" [(ngModel)]="cliente().nome" 
+id="nome-cliente" placeholder="Digite o nome do cliente">
+
+<label for="email-cliente">E-mail</label>
+<input type="text" [(ngModel)]="cliente().email" 
+id="email-cliente" placeholder="Digite o E-mail do cliente">
+
+<label for="telefone">Telefone</label>
+<input type="text" [(ngModel)]="cliente().telefone" 
+id="telefone" placeholder="Digite o telefone do cliente">
+
+<button (click)="salvar()">Salvar</button>

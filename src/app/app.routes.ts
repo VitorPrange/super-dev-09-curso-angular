@@ -8,6 +8,9 @@ import { FormCamposBasico } from './form-campos-basico/form-campos-basico';
 import { Exercicio01DadosPessoais } from './exercicio01-dados-pessoais/exercicio01-dados-pessoais';
 import { Exercicio02CalculoMedia } from './exercicio02-calculo-media/exercicio02-calculo-media';
 import { ComponenteExercicios } from './componente-exercicios/componente-exercicios';
+import { ClienteCadastrar } from './clientes/cliente-cadastrar/cliente-cadastrar';
+import { ClienteListar } from './clientes/cliente-listar/cliente-listar';
+import { ClienteEditar } from './clientes/cliente-editar/cliente-editar';
 
 export const routes: Routes = [
     {path: "cidade-blumenau", loadComponent: () => CidadeBlumenau},
@@ -16,5 +19,8 @@ export const routes: Routes = [
     {path: "filme-cavaleiro-das-trevas", loadComponent: () => FilmeCavaleiroDasTrevas},
     {path: "filme-um-sonho-de-liberdade", loadComponent: () => FilmeUmSonhoDeLiberdade},
     {path: "form-campos-basicos", loadComponent: () => FormCamposBasico},
+    {path: "clientes-cliente-cadastrar", loadComponent: () => ClienteCadastrar},
+    {path: "clientes-cliente-listar", loadComponent: () => ClienteListar},
+    {path: "clientes-cliente-editar/:id", loadComponent: () => ClienteEditar},
     {path: "exercicios", loadComponent: () => import('./componente-exercicios/componente-exercicios').then(m => m.ComponenteExercicios)},
 ];

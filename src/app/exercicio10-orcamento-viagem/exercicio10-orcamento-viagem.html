@@ -1,1 +1,50 @@
-<p>exercicio10-orcamento-viagem works!</p>
+<h1>Orçamento de Viagem</h1>
+
+    <label for="nome">Nome do viajante:</label>
+    <input type="text" id="nome" name="nome">
+
+    <br><br>
+
+    <label for="destino">Destino:</label>
+    <select id="destino" name="destino"  [(ngModel)]="destino">
+        <option value="">Selecione</option>
+        <option value="rio">Rio de Janeiro</option>
+        <option value="salvador">Salvador</option>
+        <option value="florianopolis">Florianópolis</option>
+    </select>
+
+    <br><br>
+
+    <label for="dias">Quantidade de dias:</label>
+    <input type="number" id="dias" name="dias" [(ngModel)]="quantidadeDias">
+
+    <br><br>
+
+    <p>Hospedagem:</p>
+
+    <input type="radio" id="economica" name="hospedagem" value="economica" [(ngModel)]="hospedagem">
+    <label for="economica">Econômica</label>
+
+    <input type="radio" id="conforto" name="hospedagem" value="conforto" [(ngModel)]="hospedagem">
+    <label for="conforto">Conforto</label>
+
+    <input type="radio" id="luxo" name="hospedagem" value="luxo" [(ngModel)]="hospedagem">
+    <label for="luxo">Luxo</label>
+
+    <br><br>
+
+    <input type="checkbox" id="cafe" name="cafe" [(ngModel)]="cafe">
+    <label for="cafe">Café da manhã</label>
+
+    <br>
+
+    <input type="checkbox" id="passeio" name="passeio" [(ngModel)]="passeio">
+    <label for="passeio">Passeio turístico</label>
+
+    <br><br>
+
+    <button type="button" (click)="calcularValor()">Calcular orçamento</button>
+
+    <br><br>
+
+    <textarea id="resumo" rows="15" cols="80" readonly  [(ngModel)]="resultado"></textarea>
